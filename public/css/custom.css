@@ -1,0 +1,84 @@
+main.container {
+    margin-left: calc(230px); /* Se ajusta al ancho del navbar */
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    transition: margin-left 0.3s ease;
+}
+
+/* Estilos generales del navbar */
+.side-navbar {
+    background-color: #343a40;
+    width: 250px; /* Ancho fijo del navbar */
+    height: 100vh; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    overflow-y: auto; 
+    color: #fff; 
+    z-index: 1000; 
+}
+
+.side-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.side-menu li {
+    border-bottom: 1px solid #495057;
+}
+
+.side-menu a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff; 
+    text-decoration: none; 
+    transition: background-color 0.3s ease; 
+}
+
+.side-menu a:hover {
+    background-color: #495057;
+}
+
+.side-menu .btn {
+    width: 100%;
+    text-align: left;
+    padding: 15px 20px;
+    color: #fff;
+    background: none;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.side-menu .btn:hover {
+    background-color: #495057;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .side-navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    main.container {
+        margin-left: 0;
+        padding-top: 80px;
+    }
+}
+
+.side-menu .btn-link {
+    color: #fff;
+}
+
+.side-menu .btn-link:hover {
+    color: #007bff;
+}

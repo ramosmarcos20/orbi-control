@@ -1,0 +1,9 @@
+body {
+    background: url('/images/dashboard_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.9); /* Para hacer la tarjeta más visible con un fondo semitransparente */
+    border-radius: 10px;
+}
